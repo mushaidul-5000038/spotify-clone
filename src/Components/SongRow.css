@@ -1,0 +1,126 @@
+.song_row {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 40px;
+  padding-left: 20px;
+  margin-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-radius: 90px;
+}
+.song_row.heading_row {
+  pointer-events: none;
+}
+
+.song_row:hover {
+  background-color: black;
+  opacity: 0.8;
+  transition: 200s color ease-in;
+}
+.song_row:hover .column_2 {
+  color: white;
+}
+
+.column_1 {
+  display: flex;
+  flex: 0.4;
+  margin-right: 90px;
+}
+
+.column_1 > img {
+  width: 45px;
+  height: 45px;
+}
+.song_info {
+  margin-left: 10px;
+}
+
+.song_info > h4 {
+  margin: 0;
+}
+
+.song_info > p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgb(158, 154, 154);
+}
+
+.column_2 {
+  flex: 0.3;
+  margin-right: 30px;
+}
+
+.column_3 {
+  flex: 0.2;
+  margin-right: 30px;
+}
+.column_4 {
+  flex: 0.1;
+  margin-right: 40px;
+}
+
+.heading_element {
+  font-size: 0.75rem;
+}
+
+.column_2 > h4 {
+  color: white;
+}
+.column_3 > h4 {
+  color: white;
+}
+.column_4 .MuiSvgIcon-root {
+  padding-right: 0px;
+  margin-right: 5px;
+  align-items: center;
+}
+
+.column_2,
+.column_3,
+.column_4 > p {
+  color: rgb(175, 160, 160);
+}
+
+@media screen and (max-width: 1060px) {
+  .column_1 {
+    flex: 0.8;
+  }
+  .column_2 {
+    display: none;
+  }
+  .column_3 {
+    display: none;
+  }
+  .column_4 {
+    flex: 0.2;
+  }
+}
+@media screen and (max-width: 720px) {
+  .column_1 {
+    flex: 1;
+  }
+  .column_2 {
+    display: none;
+  }
+  .column_3 {
+    display: none;
+  }
+  .column_4 {
+    display: none;
+  }
+}
+/* @media screen and (min-width: 1061px) {
+  .hide {
+    display: contents;
+  }
+} */
+
+/* @media screen and (min-width: 967px) {
+  .hide {
+    display: show;
+  }
+} */

@@ -1,0 +1,19 @@
+.login_container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.login_container > img {
+  width: 100%;
+}
+
+.login_container > a {
+  background-color: #1db954;
+  border-radius: 99px;
+  padding: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}

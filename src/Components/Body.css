@@ -1,0 +1,80 @@
+.body {
+  flex: 0.9;
+  height: 100vh;
+  color: white;
+  /* background: linear-gradient(rgb(65, 61, 87), rgb(0, 0, 1)); */
+  overflow-y: overlay;
+
+  background: linear-gradient(#0d324d, #7f5a83);
+}
+
+.banner {
+  display: flex;
+  align-items: flex-end;
+  /* height: 290px; */
+
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.banner > img {
+  height: 15vw;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.playlist_text_info {
+  flex: 1;
+}
+
+.playlist_text_info > strong {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.playlist_text_info > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  line-height: 1;
+}
+
+.playlist_text_info > p {
+  margin: 0;
+  color: rgb(163, 157, 157);
+}
+
+.top_icons {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.song_portion .MuiSvgIcon-root {
+  margin-left: 25px;
+}
+
+.song_portion .MuiSvgIcon-root.play_icon {
+  color: #1db954;
+  font-size: 3.8rem;
+  /* try to make the center white */
+}
+
+.song_portion .MuiSvgIcon-root.fav_icon {
+  color: #1db954;
+}
+
+.MuiSvgIcon-root.more_horizon_icon {
+  color: rgb(156, 154, 154);
+  transition: 0.2s color ease-in-out;
+}
+
+.MuiSvgIcon-root.more_horizon_icon:hover {
+  color: white;
+}
+
+.song_list > hr {
+  border: 0.8px solid #928a8a;
+  width: 90%;
+  margin: 5px auto;
+}
